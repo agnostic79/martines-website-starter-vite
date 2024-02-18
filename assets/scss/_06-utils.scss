@@ -1,0 +1,57 @@
+.hidden {
+  display: none;
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.hidden-mobile {
+  @include mobile {
+    display: none !important;
+  }
+}
+
+.visible-mobile {
+  @include mobile-above {
+    display: none !important;
+  }
+}
+
+.invisible {
+  visibility: hidden;
+  opacity: 0;
+}
+
+//clearfix
+.cf::before,
+.cf::after {
+  content: " ";
+  display: table;
+}
+.cf::after {
+  clear: both;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+  &--fullwidth {
+    width: 100%;
+  }
+  &--fullheight {
+    height: 100%;
+    width: auto;
+  }
+}
+
+.svg-responsive {
+  width: 100%;
+  height: auto;
+  &--fullheight {
+    height: 100%;
+    width: auto;
+  }
+}

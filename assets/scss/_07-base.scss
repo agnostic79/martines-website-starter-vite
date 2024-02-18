@@ -1,0 +1,112 @@
+/* ============== For Easy Rem/px calculations ==============*/
+:root {
+  // font-size: 62.5%;
+  font-size: 10px;
+}
+
+/* ============== Overall Base Styles ==============*/
+
+body {
+  min-width: 320px;
+  position: relative;
+  overflow-x: hidden;
+  font-family: var(--ff-base);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+input,
+textarea {
+  border: #666 1px solid;
+  outline: none;
+  &:focus:required:invalid {
+    border-color: red;
+  }
+  &:required:valid {
+    border-color: green;
+  }
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-base);
+  font-weight: 700;
+}
+
+a:link,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+a:focus,
+a:active {
+  outline: 0;
+  text-decoration: none !important;
+}
+
+::placeholder {
+  color: #666;
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+
+*::-webkit-input-placeholder {
+  color: var(--color-mid-gray);
+  opacity: 1;
+}
+
+*:-moz-placeholder {
+  color: var(--color-mid-gray);
+  opacity: 1;
+}
+
+*::-moz-placeholder {
+  color: var(--color-mid-gray);
+  opacity: 1;
+}
+
+*:-ms-input-placeholder {
+  color: var(--color-mid-gray);
+  opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: var(--color-mid-gray);
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: var(--color-mid-gray);
+}
+
+body input:-moz-ui-invalid:not(output) {
+  box-shadow: 0px 0px 1.5px 1px var(--color-accent);
+}
+
+body textarea:-moz-ui-invalid:not(output) {
+  box-shadow: 0px 0px 1.5px 1px var(--color-accent);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
