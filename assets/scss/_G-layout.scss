@@ -1,31 +1,29 @@
-:root {
-  --x-padding: 15px;
-}
+@use "./helpers" as *;
 
 /* ============== Modern Container ============== */
 .wrapper {
-  --wrapper-width: 1600px;
+  --wrapper-width: rem(1600);
   width: min(calc(100% - 2 * var(--x-padding)), var(--wrapper-width));
   margin-inline: auto;
 
   @include desktop-xl {
-    --wrapper-width: 1320px;
+    --wrapper-width: rem(1320);
   }
 
   @include desktop-l {
-    --wrapper-width: 1140px;
+    --wrapper-width: rem(1140);
   }
 
   @include desktop {
-    --wrapper-width: 960px;
+    --wrapper-width: rem(960);
   }
 
   @include tablet {
-    --wrapper-width: 720px;
+    --wrapper-width: rem(720);
   }
 
   @include mobile {
-    --wrapper-width: 540px;
+    --wrapper-width: rem(540);
   }
 }
 
@@ -63,7 +61,7 @@
 /* ============== Classic Container ============== */
 
 .container {
-  --container-width: 1600px;
+  --container-width: rem(1600);
 
   margin: 0 auto;
   padding: 0 var(--x-padding);
@@ -71,23 +69,23 @@
   max-width: calc(var(--container-width) + 2 * var(--x-padding));
 
   @include desktop-xl {
-    --container-width: 1320px;
+    --container-width: rem(1320);
   }
 
   @include desktop-l {
-    --container-width: 1140px;
+    --container-width: rem(1140);
   }
 
   @include desktop {
-    --container-width: 960px;
+    --container-width: rem(960);
   }
 
   @include tablet {
-    --container-width: 720px;
+    --container-width: rem(720);
   }
 
   @include mobile {
-    --container-width: 540px;
+    --container-width: rem(540);
   }
 }
 

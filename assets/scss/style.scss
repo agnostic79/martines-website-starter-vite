@@ -1,11 +1,11 @@
-@import "00-my-normalize";
-@import "01-libs";
-@import "02-fonts";
-@import "03-mixins";
-@import "04-media";
-@import "05-variables";
-@import "06-utils";
-@import "07-base";
-@import "08-layout";
+@use "A-my-normalize";
+@use "B-libs";
+@use "C-fonts";
+@use "D-variables";
+@use "E-utils";
+@use "F-base";
+@use "G-layout";
 
 // Start here
+
+@use "blocks";

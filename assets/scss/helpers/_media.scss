@@ -1,20 +1,22 @@
-$desktop-xl: 1599px;
-$desktop-xl-above: 1600px;
+@use "./functions" as *;
 
-$desktop-l: 1399px;
-$desktop-l-above: 1400px;
+$desktop-xl: rem(1599);
+$desktop-xl-above: rem(1600);
 
-$desktop: 1199px;
-$desktop-above: 1200px;
+$desktop-l: rem(1399);
+$desktop-l-above: rem(1400);
 
-$tablet: 991px;
-$tablet-above: 992px;
+$desktop: rem(1199);
+$desktop-above: rem(1200);
 
-$mobile: 767px;
-$mobile-above: 768px;
+$tablet: rem(991);
+$tablet-above: rem(992);
 
-$mobile-s: 479px;
-$mobile-s-above: 480px;
+$mobile: rem(767);
+$mobile-above: rem(768);
+
+$mobile-s: rem(479);
+$mobile-s-above: rem(480);
 
 @mixin desktop-xl-above {
   @media (min-width: $desktop-xl-above) {
